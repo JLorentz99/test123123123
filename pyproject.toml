@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-name"
+version = "0.1.0"
+description = "Reusable code for a bioinformatics research project."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "Project Contributors", email = "maintainer@example.com" },
+]
+dependencies = []
+
+[project.optional-dependencies]
+analysis = [
+    "ipykernel>=7.3.0",
+    "jupytext>=1.17",
+    "jupyterlab>=4.6.4",
+    "matplotlib>=3.11.2",
+    "nbconvert>=7",
+    "pandas>=3.0.6",
+    "seaborn>=0.13.2",
+]
+bio = [
+    "biopython>=1.88",
+]
+dev = [
+    "pre-commit>=4.6.2",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.9",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=project_name --cov-report=term-missing --strict-markers"
+testpaths = ["tests/python"]
+
+[tool.coverage.run]
+branch = true
+source = ["project_name"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["B", "E4", "E7", "E9", "F", "I", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]

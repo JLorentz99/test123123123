@@ -1,0 +1,31 @@
+name: Analysis change
+description: Propose a change to the scientific analysis or workflow.
+title: "[Analysis]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Scientific question
+      description: What question or limitation does this change address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the method, affected inputs, and expected outputs.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: How will correctness and scientific impact be assessed?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Link methods, papers, protocols, or related issues.

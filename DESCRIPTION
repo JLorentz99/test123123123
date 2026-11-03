@@ -1,0 +1,18 @@
+Package: projectname
+Title: Project Title
+Version: 0.1.0
+Authors@R:
+    person("Project", "Contributors", email = "maintainer@example.com",
+           role = c("aut", "cre"))
+Description: Reusable R functions for a bioinformatics research project.
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests:
+    lintr,
+    renv,
+    rmarkdown,
+    styler,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

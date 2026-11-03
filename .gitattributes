@@ -1,0 +1,19 @@
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.gz binary
+*.zip binary
+*.bam binary
+*.cram binary
+*.h5 binary
+*.h5ad binary
+
+# Generated dependency locks should not dominate language statistics.
+renv.lock linguist-generated=true

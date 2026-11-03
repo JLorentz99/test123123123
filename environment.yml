@@ -1,0 +1,17 @@
+name: science-project
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+  - r-base=4.5
+  - r-lintr
+  - r-rmarkdown
+  - r-renv
+  - r-styler
+  - r-testthat
+  - pandoc
+  - pip:
+      - -e .[analysis,bio,dev]

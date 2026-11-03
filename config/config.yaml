@@ -1,0 +1,14 @@
+project:
+  name: project-name
+  random_seed: 42
+
+paths:
+  samples: metadata/samples.tsv
+  raw_data: data/raw
+  interim_data: data/interim
+  processed_data: data/processed
+  figures: results/figures
+  tables: results/tables
+
+# Add analysis-specific parameters below and document their units and meaning.
+analysis: {}

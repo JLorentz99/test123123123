@@ -1,0 +1,103 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+CLAUDE.local.md
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.yaml
+secrets*.yml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# R and RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+renv/library/
+renv/staging/
+renv/python/
+
+# Quarto and generated documents
+/.quarto/
+/_freeze/
+reports/*_files/
+reports/*.html
+reports/*.pdf
+reports/*.docx
+
+# Workflow engines and logs
+.snakemake/
+.nextflow/
+work/
+nextflow.log*
+*.log
+
+# Local environment tooling
+.conda/
+.pixi/
+
+# Data are local or managed by a dedicated data store.
+/data/raw/*
+!/data/raw/.gitkeep
+/data/interim/*
+!/data/interim/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Generated outputs are reproducible and ignored by default.
+/results/figures/*
+!/results/figures/.gitkeep
+/results/tables/*
+!/results/tables/.gitkeep
+
+# Common large bioinformatics formats. Remove a pattern only after deciding
+# that Git is the correct storage mechanism for that file type.
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.sam
+*.bcf
+*.vcf.gz
+*.vcf.bgz
+*.tbi
+*.csi
+*.bigWig
+*.bw
+*.bed.gz
+*.h5
+*.h5ad
+*.loom
